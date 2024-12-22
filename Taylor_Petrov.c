@@ -96,6 +96,16 @@ int main()
 		scanf_s("%lf", &x);
 		printf("Enter tochhonst:\n");
 		scanf_s("%lf", &tochhonst);
+		if ((function == 2) || (function == 3)) //Добавил
+		{
+		while (fabs(x) > M_PI * 2)
+		{
+		if (x > 0)
+		x -= M_PI;
+		if (x < 0)
+		x += M_PI;
+		}
+		}
 		if (mode == 1)
 		{
 			printf("Enter N\n");
